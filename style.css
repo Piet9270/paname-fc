@@ -625,3 +625,8 @@ nav ul li a {
 nav ul li a:hover {
   color: #FF5733; /* Une couleur sympa au survol */
 }
+header img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px; /* Ajuste la taille selon ton besoin */
+}
