@@ -630,3 +630,11 @@ header img {
   margin: 0 auto;
   max-width: 200px; /* Ajuste la taille selon ton besoin */
 }
+eader {
+  text-align: center;
+}
+
+header img {
+  max-width: 200px;
+  margin: 0 auto;
+}
