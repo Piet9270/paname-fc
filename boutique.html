@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Boutique - Paname FC</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #001F5B;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #0033A0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #D2042D;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 20px 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #001F5B;
+      margin-bottom: 20px;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      transition: opacity 0.4s ease;
+      opacity: 1;
+    }
+
+    .carousel img.fade-out {
+      opacity: 0;
+    }
+
+    .maillot {
+      margin-bottom: 60px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #001F5B;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Paname FC - Boutique</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="stade.html">Stade</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="adhesion.html">Adhésion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="boutique">
+    
+    <div class="maillot">
+      <h2>Maillot Extérieur Officiel</h2>
+      <div class="carousel">
+        <img src="maillot.jpg" id="slide1" alt="Maillot extérieur">
+      </div>
+      <p><strong>Prix :</strong> 49,99€</p>
+      <p><strong>Tailles :</strong> S, M, L, XL</p>
+      <p><strong>Description :</strong> Design élégant, tissu respirant, parfait pour les matchs à l'extérieur.</p>
+    </div>
+
+    <div class="maillot">
+      <h2>Maillot Domicile Officiel</h2>
+      <div class="carousel">
+        <img src="maillot4.jpg" id="slide2" alt="Maillot domicile">
+      </div>
+      <p><strong>Prix :</strong> 49,99€</p>
+      <p><strong>Tailles :</strong> S, M, L, XL</p>
+      <p><strong>Description :</strong> Bleu Paname, rouge vibrant – l’âme du club à domicile.</p>
+    </div>
+
+    <div class="maillot">
+      <h2>Bonnet d'entraînement Officiel</h2>
+      <div class="carousel">
+        <img src="bonnet1.jpg" id="slide3" alt="Bonnet d'entraînement">
+      </div>
+      <p><strong>Prix :</strong> 9,99€</p>
+      <p><strong>Tailles :</strong> Unique</p>
+      <p><strong>Description :</strong> Bonnet chaud et stylé pour les entraînements hivernaux.</p>
+    </div>
+
+    <div class="maillot">
+      <h2>Sweat d'entraînement Officiel</h2>
+      <div class="carousel">
+        <img src="sweat1.jpg" id="slide4" alt="Sweat d'entraînement">
+      </div>
+      <p><strong>Prix :</strong> 29,99€</p>
+      <p><strong>Tailles :</strong> S, M, L </p>
+      <p><strong>Description :</strong> Sweat d'entraînement du club parfait pour les séances plus froides et les sorties à l'extérieur.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Paname FC - Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Carrousel maillot extérieur
+    const images1 = ["maillot.jpg", "maillot2.jpg", "maillot3.jpg"];
+    let i1 = 0;
+    const slide1 = document.getElementById("slide1");
+
+    setInterval(() => {
+      slide1.classList.add("fade-out");
+      setTimeout(() => {
+        i1 = (i1 + 1) % images1.length;
+        slide1.src = images1[i1];
+        slide1.classList.remove("fade-out");
+      }, 400);
+    }, 3000);
+
+    // Carrousel maillot domicile
+    const images2 = ["maillot4.jpg", "maillot5.jpg", "maillot6.jpg"];
+    let i2 = 0;
+    const slide2 = document.getElementById("slide2");
+
+    setInterval(() => {
+      slide2.classList.add("fade-out");
+      setTimeout(() => {
+        i2 = (i2 + 1) % images2.length;
+        slide2.src = images2[i2];
+        slide2.classList.remove("fade-out");
+      }, 400);
+    }, 3000);
+
+    // Carrousel bonnet
+    const images3 = ["bonnet1.jpg", "bonnet2.jpg"];
+    let i3 = 0;
+    const slide3 = document.getElementById("slide3");
+
+    setInterval(() => {
+      slide3.classList.add("fade-out");
+      setTimeout(() => {
+        i3 = (i3 + 1) % images3.length;
+        slide3.src = images3[i3];
+        slide3.classList.remove("fade-out");
+      }, 400);
+    }, 3000);
+
+    // Carrousel sweat
+    const images4 = ["sweat1.jpg", "sweat2.jpg"];
+    let i4 = 0;
+    const slide4 = document.getElementById("slide4");
+
+    setInterval(() => {
+      slide4.classList.add("fade-out");
+      setTimeout(() => {
+        i4 = (i4 + 1) % images4.length;
+        slide4.src = images4[i4];
+        slide4.classList.remove("fade-out");
+      }, 400);
+    }, 3000);
+  </script>
+</body>
+</html>
+
+    setInterval(() => {
+      slide2.classList.add("fade-out");
+      setTimeout(() => {
+        i2 = (i2 + 1) % images2.length;
+        slide2.src = images2[i2];
+        slide2.classList.remove("fade-out");
+      }, 400);
+    }, 3000);
+  </script>
+</body>
+</html>

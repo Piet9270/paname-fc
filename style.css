@@ -1,0 +1,627 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+header {
+  background-color: #004B87; /* Bleu Paris */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #E2001A; /* Rouge */
+}
+
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #004B87;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #E2001A;
+  padding-bottom: 5px;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border: 3px solid #004B87;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004B87;
+  color: white;
+  margin-top: 40px;
+}
+}
+
+#accueil img {
+  border: 3px solid #004B87; /* Bordure bleue autour du logo */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Pied de page */
+footer {
+  background-color: #004B87; /* Bleu Paris */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+section img {
+  transition: transform 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.05);
+}
+header {
+  background: linear-gradient(270deg, #004B87, #E2001A);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.button {
+  display: inline-block;
+  background-color: #E2001A;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #c40017;
+  transform: scale(1.05);
+}
+/* Boutique - carrousel */
+.carousel {
+  width: 320px;
+  height: auto;
+  margin: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+.carousel {
+  width: 320px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel img.visible {
+  opacity: 1;
+}
+.carousel {
+  width: 320px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel img.visible {
+  opacity: 1;
+}
+form input, form select {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0055a5;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section#adhesion img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+:root {
+  --bleu-paname: #0055a5; /* Bleu foncé de Paris */
+  --rouge-paname: #f5a623; /* Rouge Paris */
+  --blanc-paname: #ffffff; /* Blanc classique */
+  --gris-clair: #f4f4f4; /* Gris clair pour l’arrière-plan */
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: var(--gris-clair);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style des liens */
+a {
+  color: var(--bleu-paname);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--rouge-paname);
+}
+
+/* En-tête */
+header {
+  background-color: var(--bleu-paname);
+  padding: 20px 0;
+  color: var(--blanc-paname);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: var(--blanc-paname);
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: var(--rouge-paname);
+}
+
+/* Section principale */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Bouton */
+.btn-adhesion {
+  background-color: var(--rouge-paname);
+  color: var(--blanc-paname);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-adhesion:hover {
+  background-color: var(--bleu-paname);
+}
+.carousel img {
+  border-radius: 15px; /* Bordures arrondies pour plus de style */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+.btn-adhesion {
+  background-color: var(--rouge-paname);
+  color: var(--blanc-paname);
+  padding: 12px 24px;
+  font-size: 1.3em;
+  border: 2px solid var(--rouge-paname);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-adhesion:hover {
+  background-color: var(--blanc-paname);
+  color: var(--rouge-paname);
+  transform: scale(1.1);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--bleu-paname);
+  padding: 15px 0;
+}
+#adhesion {
+  background-color: var(--blanc-paname);
+  background-image: url('jeunes.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  color: var(--bleu-paname);
+}
+
+#adhesion h2 {
+  font-size: 2.5em;
+  color: var(--rouge-paname);
+  margin-bottom: 20px;
+}
+
+#adhesion .btn-adhesion {
+  background-color: var(--rouge-paname);
+}
+
+#adhesion .img-adhesion {
+  max-width: 80%;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+/* Style général du menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* Style de l'élément principal du menu */
+nav ul li a {
+  color: var(--blanc-paname);
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 10px;
+  display: block;
+  background-color: var(--bleu-paname);
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: var(--rouge-paname);
+}
+
+/* Menu déroulant */
+.menu-deroulant {
+  position: relative;
+}
+
+.sous-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bleu-paname);
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sous-menu li {
+  width: 200px;
+}
+
+.sous-menu li a {
+  color: var(--blanc-paname);
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1em;
+  background-color: var(--bleu-paname);
+}
+
+.sous-menu li a:hover {
+  background-color: var(--rouge-paname);
+}
+
+/* Affichage du menu déroulant quand on survole */
+.menu-deroulant:hover .sous-menu {
+  display: block;
+}
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: var(--gris-clair);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px; /* Espace au début de la page */
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#adhesion {
+  background-image: url('jeunes.jpg');
+  background-size: cover; /* Pour bien remplir l'espace sans déformation */
+  background-position: center;
+  padding: 50px 20px;
+  color: var(--bleu-paname);
+}
+
+#adhesion h2 {
+  font-size: 2.5em;
+  color: var(--rouge-paname);
+  margin-bottom: 20px;
+}
+
+#adhesion .img-adhesion {
+  max-width: 80%;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Styles pour la section boutique */
+#boutique {
+  margin: 80px auto 50px auto; /* Espacement autour de la section */
+  padding: 40px;               /* Espacement interne */
+  max-width: 900px;
+  text-align: center;
+}
+
+#boutique .carousel {
+  display: flex;
+  justify-content: center;  /* Centre les images */
+  gap: 20px;                /* Espace entre les images */
+  margin-bottom: 30px;      /* Espacement sous le carrousel */
+}
+
+#boutique img {
+  width: 100%;
+  max-width: 350px;        /* Limite la largeur de chaque image */
+  height: auto;
+  border-radius: 8px;      /* Ajoute des coins arrondis */
+}
+
+#boutique .button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0056b3; /* Bleu Paname */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003366; /* Change la couleur au survol */
+}
+/* Ajout d'un espace en haut de la page */
+body {
+  padding-top: 100px; /* Crée un espace de 100px entre le haut de la page et le contenu */
+}
+
+/* Styles pour la section boutique */
+#boutique {
+  margin: 80px auto 50px auto; /* Espacement autour de la section */
+  padding: 40px;               /* Espacement interne */
+  max-width: 900px;
+  text-align: center;
+  margin-top: 60px;            /* Ajoute un espace au-dessus de la section boutique */
+}
+
+/* Espacement avant et après le titre */
+#boutique h2 {
+  margin-bottom: 40px;  /* Espace sous le titre */
+  font-size: 2em;       /* Agrandir légèrement la taille du titre */
+  color: #0056b3;       /* Couleur bleu Paname */
+  font-weight: bold;    /* Rendre le titre plus marqué */
+}
+
+#boutique .carousel {
+  display: flex;
+  justify-content: center;  /* Centre les images */
+  gap: 30px;                /* Espacement plus grand entre les images */
+  margin-bottom: 30px;      /* Espacement sous le carrousel */
+}
+
+#boutique img {
+  width: 100%;
+  max-width: 350px;        /* Limite la largeur de chaque image */
+  height: auto;
+  border-radius: 8px;      /* Ajoute des coins arrondis */
+}
+
+/* Espacement autour du bouton ajouter au panier */
+#boutique .button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #0056b3; /* Bleu Paname */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #003366; /* Change la couleur au survol */
+}
+header {
+  position: fixed; /* S'il est fixe */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10; /* Assure-toi que le menu soit toujours au-dessus des autres éléments */
+}
+
+body {
+  padding-top: 100px; /* Assure qu'il y a bien un espace entre le menu et le contenu */
+}
+/* Ajoute un padding-top spécifique à la section boutique pour l'éloigner du menu */
+#boutique {
+  margin-top: 100px; /* Ajoute 100px d'espace au-dessus de la section boutique */
+  padding: 40px;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* S'assurer qu'il n'y a pas d'image de fond dans la section #adhesion */
+#adhesion {
+  background-image: none; /* Empêche l'affichage d'une image en fond */
+  padding: 20px;
+  text-align: center;
+}
+.insta-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.insta-link a {
+  color: #002D72;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.insta-link a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white; /* Ou la couleur de ton choix */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #FF5733; /* Une couleur sympa au survol */
+}
